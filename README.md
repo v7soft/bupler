@@ -10,7 +10,6 @@ Inside the docker container are two folders that sync with persistent folders on
 The folder "source_for_bup" is the source for the BUP, the "target_for_bup" is the target for BUP. 
 The docker could be run, for example, next command: 
 
-docker run -i -t -d -v /local_folder/target_for_btsync:/source_for_bup \
--v /local_folder:/target_for_bup setronica/btsyncer
+docker run -i -t -d -v /local_folder/target_for_btsync:/source_for_bup -v /local_folder:/target_for_bup setronica/btsyncer
 
 The BUP start every work day at 22:00 by default.
